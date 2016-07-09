@@ -138,3 +138,16 @@ def nope():
     os.system("eject cdrom")
 
 ###############################################################
+
+# This is just to return the n'th fibbonachi number.
+
+def fib(Number):
+    f1,f2 = 1,1
+    run = 0
+    while run<Number - 3:
+        f1,f2 = f2,f1+f2
+        print f2
+        run += 1
+    return f2
+
+###############################################################
