@@ -1,0 +1,3 @@
+# FortyTwo
+This is A personal python module for 1m0r74l17y
+I am currently working on it...
