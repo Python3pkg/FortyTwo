@@ -124,7 +124,7 @@ def divide(a,b):
 def sumsquaredifference(Number):
     sumofsquares = 0
     for num in range(Number):
-        sumofsquares = sumofsquares + num+1*num+1
+        sumofsquares = sumofsquares + (num+1)*(num+1)
     squareofsums = sum(range(Number)) ** 2
     return squareofsums - sumofsquares
 
