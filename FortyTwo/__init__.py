@@ -1,1 +1,4 @@
-# Might add something here later.
+
+import FortyTwo
+
+def Start():
