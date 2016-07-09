@@ -124,7 +124,7 @@ def divide(a,b):
 def sumsquaredifference(Number):
     sumofsquares = 0
     for num in range(Number):
-        sumofsquares = sumofsquares + num*num
+        sumofsquares = sumofsquares + num+1*num+1
     squareofsums = sum(range(Number)) ** 2
     return squareofsums - sumofsquares
 
@@ -146,7 +146,6 @@ def fib(Number):
     run = 0
     while run<Number - 3:
         f1,f2 = f2,f1+f2
-        print f2
         run += 1
     return f2
 
