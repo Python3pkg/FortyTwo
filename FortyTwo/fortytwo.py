@@ -31,7 +31,7 @@ def emailgenerator(First,Last,Domain,Out):
     #then it decides if it should print or write.
     if Out.lower() == "raw":
         for item in email_list:
-            print(str(item) + "\n")
+            print((str(item) + "\n"))
 
     else:
         fil = open(First + Last + '@' + Domain + ".txt", "w")
@@ -66,19 +66,19 @@ def loading(Animation,Loops,Delay):
 def quadraticequation(A, B, C):
     import math
     D = B*B-(4*A*C)
-    print "d : " + str(D)
+    print("d : " + str(D))
     if D == 0.0 or 0:
         sqrtd = math.sqrt(D)
         x = -B/(2*A)
-        print "x : " + str(x)
+        print("x : " + str(x))
     if D < 0:
-        print "there is no x."
+        print("there is no x.")
     if D > 0:
         sqrtd = math.sqrt(D)
         x1 = (-B+sqrtd)/(2*A)
-        print "x+ : " + str(x1)
+        print("x+ : " + str(x1))
         x2 = (-B-sqrtd)/(2*A)
-        print "x- : " + str(x2)
+        print("x- : " + str(x2))
 
 ###############################################################
 
@@ -87,10 +87,10 @@ def quadraticequation(A, B, C):
 # and win competitions in your class.
 
 def likefilmlinjen(productionId, likecount):
-    import urllib2
+    import urllib.request, urllib.error, urllib.parse
     productionId = str(productionId)
     for i in range(likecount):
-        urllib2.urlopen('http://filmlinjen.dk/umbraco/surface/ProductionsSurface/IncrementLikes?productionId=' + productionId +  '&timestamp=635962278782832032')
+        urllib.request.urlopen('http://filmlinjen.dk/umbraco/surface/ProductionsSurface/IncrementLikes?productionId=' + productionId +  '&timestamp=635962278782832032')
 
 ###############################################################
 
